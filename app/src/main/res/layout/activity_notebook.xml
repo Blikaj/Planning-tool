@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTopic"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginBottom="40dp"
+        android:text="@string/my_category"
+
+        android:textColor="@color/black"
+        android:textSize="24sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:text="@string/input_topic"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+
+            android:textSize="18sp"></TextView>
+
+        <EditText
+            android:id="@+id/etTopic"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginBottom="20dp"
+        android:onClick="onClick"
+        android:text="@string/date_and_time"></Button>
+
+    <Button
+        android:id="@+id/btnAddTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClick"
+        android:text="@string/adding_topic"></Button>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bisquit"></View>
+
+    <ListView
+        android:id="@+id/lvFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
